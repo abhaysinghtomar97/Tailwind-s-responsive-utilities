@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <script src="https://cdn.tailwindcss.com">
+        
+      </script>
+</head>
+
+
+<body >
+   
+   <div class="h-screen " >
+    <header class=" bg-blue-900 text-white p-4" >
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="text-lg font-bold">MyLogo</div>
+      
+          <!-- Links -->
+          <nav class="hidden md:flex space-x-4">
+            <a href="#" class="hover:text-blue-300">Home</a>
+            <a href="#" class="hover:text-blue-400">About</a>
+            <a href="#" class="hover:text-blue-400">Services</a>
+            <a href="#" class="hover:text-blue-400">Contact</a>
+          </nav>
+      
+          <!-- Hamburger Menu -->
+          <button class="md:hidden block menu" id="menu-btn" onclick="toggleMenu">
+            <span class="block w-6 h-1 bg-white mb-1"></span>
+            <span class="block w-6 h-1 bg-white mb-1"></span>
+            <span class="block w-6 h-1 bg-white"></span>
+          </button>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <nav class="hidden " id="mobile-menu">
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Home</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">About</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Services</a>
+          <a href="#" class="block py-2 px-4 hover:bg-gray-700">Contact</a>
+        </nav>
+      </header>
+
+
+      <!-- card -->
+
+      <section class=" bg-gray-100 p-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white p-4 shadow rounded">
+            <h3 class="text-xl font-bold mb-2">Card Title 1</h3>
+            <p class="text-gray-600">This is a description for card 1.</p>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="bg-white p-4 shadow rounded">
+            <h3 class="text-xl font-bold mb-2">Card Title 2</h3>
+            <p class="text-gray-600">This is a description for card 2.</p>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="bg-white p-4 shadow rounded">
+            <h3 class="text-xl font-bold mb-2">Card Title 3</h3>
+            <p class="text-gray-600">This is a description for card 3.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- pricing banner -->
+
+
+      <section class=" bg-gray-50 py-12">
+        <div class="container mx-auto text-center mb-6">
+          <h2 class="text-3xl font-bold">Our Pricing</h2>
+          <p class="text-gray-600">Choose a plan that fits your needs.</p>
+        </div>
+      
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Free Plan -->
+          <div class="bg-white p-6 border rounded text-center shadow">
+            <h3 class="text-2xl font-bold">Free</h3>
+            <p class="text-gray-600 mb-4">Basic features for individuals.</p>
+            <p class="text-4xl font-bold mb-4">$0</p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Sign Up</button>
+          </div>
+      
+          <!-- Pro Plan (Highlighted) -->
+          <div class="bg-white p-6 border rounded text-center shadow-lg border-blue-600 text-blue-600">
+            <h3 class="text-2xl font-bold">Pro</h3>
+            <p class="text-gray-600 mb-4">Advanced features for professionals.</p>
+            <p class="text-4xl font-bold mb-4">$49</p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Get Started</button>
+          </div>
+      
+          <!-- Enterprise Plan -->
+          <div class="bg-white p-6 border rounded text-center shadow">
+            <h3 class="text-2xl font-bold">Enterprise</h3>
+            <p class="text-gray-600 mb-4">All-in-one solution for teams.</p>
+            <p class="text-4xl font-bold mb-4">$99</p>
+            <button class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Contact Us</button>
+          </div>
+        </div>
+      </section>
+      <footer class=" text-center bg-blue-900 text-lg font-bold ">
+        @Abhay Singh Tomar
+      </footer>
+      
+   </div>
+      
+      <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        
+      </script>
+      
+  
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+Topics:
+
+Tailwind's responsive utilities (sm, md, lg, xl, 2xl).
+
+Flexbox and Grid utilities for layout (flex, grid, gap, etc.).
+
+
+Tasks:
+
+1. Build a Responsive Navbar:
+
+Include a logo, links, and a hamburger menu for mobile.
+
+Use hidden, block, and md:flex to toggle visibility.
+
+
+
+2. Design a Card Grid:
+
+Use Tailwind's grid and gap classes to create a 3-column layout that adjusts to 1-column on small screens.
+
+
+
+3. Challenge:
+
+Create a Pricing Section:
+
+Cards for plans like "Free," "Pro," and "Enterprise."
+
+Highlight one plan using shadow-lg, border, and text-blue-600.
